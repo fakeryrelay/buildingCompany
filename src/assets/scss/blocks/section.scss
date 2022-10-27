@@ -1,0 +1,49 @@
+.section {
+	padding: 15rem 0;
+
+	&--gray {
+		background-color: #f0f0f0;
+	}
+
+	&--sm {
+		padding: 12rem 0 14rem;
+	}
+	
+	&--news {
+		padding: 12rem 0 3rem;
+	}
+}
+
+.section__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	&--white {
+		color: $white;
+	}
+}
+
+.section__title {
+	max-width: 620px;
+	font-size: 4.8rem;
+	font-weight: 700;
+}
+
+.section__text {
+	max-width: 700px;
+	font-size: 1.8rem;
+}
+
+.section__end {
+	&--plan {
+		display: flex;
+		gap: 3rem;
+	}
+
+	&--news {
+		margin-right: 3rem;
+		display: flex;
+		gap: 1.5rem;
+	}
+}

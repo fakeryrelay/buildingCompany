@@ -1,0 +1,161 @@
+.preview {
+	width: 100%;
+	height: 100vh;
+	max-height: 1040px;
+
+	display: flex;
+	align-items: flex-end;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100vh;
+		max-height: 1040px;
+		background-color: rgba(#333, .75);
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+.preview__img {
+	display: block;
+	width: 100%;
+	height: 100vh;
+	max-height: 1040px;
+	object-fit: cover;
+	object-position: center;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -10;
+}
+
+.preview__content {
+	padding-bottom: 180px;
+}
+
+.preview__title {
+	max-width: 620px;
+	margin-bottom: 5rem;
+
+	color: $white;
+	font-size: 6.4rem;
+	font-weight: 700;
+	line-height: 1.45;
+}
+
+.preview__link {
+
+	color: $white;
+	font-size: 1.2rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	text-decoration: none;
+
+	&::after {
+		margin-left: 3rem;
+		content: "";
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+
+		border-bottom: 2px solid #fff;
+		border-right: 2px solid #fff;
+
+		transform: rotate(-45deg);
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.preview__news {
+	height: 100vh;
+	max-height: 1040px;
+	width: 550px;
+	padding-top: 80px;
+
+	background-color: $primary;
+
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+}
+
+.preview__news-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 3rem;
+
+	padding: 4.5rem;
+}
+
+.preview__news-item {
+	width: 100%;
+	padding: 3rem 3.5rem;
+	border-radius: 10px;
+
+	position: relative;
+
+	&::after {
+		content: "";
+		display: block;
+		width: 100%;
+		height: 100%;
+
+		background-color: rgba(#333, .75);
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		z-index: -1;
+	}
+}
+
+.preview__news-img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	border-radius: 10px;
+
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -10;
+
+	
+}
+
+.preview__news-title {
+	margin-bottom: 2rem;
+}
+
+.preview__news-link {
+	color: $white;
+	font-size: 1.8rem;
+	font-weight: 700;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.preview__news-date {
+	color: $white;
+	font-size: 1.4rem;
+}
+
+.preview__news-link {
+	margin-top: 2rem;
+}

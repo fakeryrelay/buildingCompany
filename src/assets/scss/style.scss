@@ -1,0 +1,54 @@
+@import "vendor/reset";
+@import "vars";
+
+@font-face {
+  font-family: "Cannonade";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cannonade"),
+       url("../fonts/Cannonade.ttf") format("ttf")
+}
+
+@font-face {
+  font-family: "Cannonade";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cannonade Bold"),
+       url("../fonts/Cannonade\ Bold.ttf") format("ttf")
+}
+
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    font-size: 1.6rem;
+    color: #333;
+		line-height: 1.45;
+
+		font-family: $font;
+
+		position: relative;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box
+}
+
+@import "blocks/container";
+@import "blocks/header";
+@import "blocks/nav";
+@import "blocks/section";
+@import "blocks/btn";
+@import "blocks/link";
+@import "blocks/preview";
+@import "blocks/products";
+@import "blocks/partners";
+@import "blocks/calc";
+@import "blocks/plan";
+@import "blocks/news";
+@import "blocks/footer";
