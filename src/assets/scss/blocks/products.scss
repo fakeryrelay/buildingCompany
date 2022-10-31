@@ -4,12 +4,23 @@
 	flex-wrap: wrap;
 	gap: 2.4rem;
 	row-gap: 5rem;
+	justify-content: center;
 }
 
 .products__item {
 	width: calc(33.33333% - 16px);
 	display: flex;
 	flex-direction: column;
+
+	@include breakpoint($notebook) {
+		width: calc(50% - 12px);
+		max-width: 500px;
+	}
+
+	@include breakpoint($tablet-sm) {
+		width: 100%;
+		max-width: 500px;
+	}
 }
 
 .products__img {
@@ -25,6 +36,11 @@
 	display: flex;
 	justify-content: space-between;
 	flex-grow: 1;
+	gap: 1rem;
+
+	@include breakpoint($tablet-sm) {
+		margin-top: 3rem;
+	}
 }
 
 .products__left {

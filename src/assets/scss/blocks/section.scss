@@ -8,9 +8,21 @@
 	&--sm {
 		padding: 12rem 0 14rem;
 	}
-	
-	&--news {
-		padding: 12rem 0 3rem;
+
+	@include breakpoint($tablet) {
+		padding: 12rem 0;
+
+		&--sm {
+			padding: 10rem 0 12rem;
+		}
+	}
+
+	@include breakpoint($tablet-sm) {
+		padding: 10rem 0;
+
+		&--sm {
+			padding: 8rem;
+		}
 	}
 }
 
@@ -18,9 +30,19 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 5rem;
 
 	&--white {
 		color: $white;
+	}
+
+	@include breakpoint($tablet) {
+		gap: 2.5rem;
+	}
+
+	@include breakpoint($tablet-sm) {
+		flex-direction: column;
+		text-align: center;
 	}
 }
 
@@ -28,6 +50,15 @@
 	max-width: 620px;
 	font-size: 4.8rem;
 	font-weight: 700;
+	white-space: nowrap;
+
+	@include breakpoint($tablet-sm) {
+		white-space: inherit;
+	}
+
+	@include breakpoint($mobile) {
+		font-size: 3.6rem;
+	}
 }
 
 .section__text {
