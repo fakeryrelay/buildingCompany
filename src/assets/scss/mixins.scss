@@ -1,0 +1,11 @@
+@mixin breakpoint($bp) {
+	@media (max-width: $bp) {
+		@content;
+	}
+}
+
+/*
+@include breakpoint($desktop) {
+	text
+}
+*/
