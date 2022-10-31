@@ -1,5 +1,6 @@
 @import "vendor/reset";
 @import "vars";
+@import "mixins";
 
 @font-face {
   font-family: "Cannonade";
@@ -41,6 +42,7 @@ body {
 
 @import "blocks/container";
 @import "blocks/header";
+@import "blocks/burger";
 @import "blocks/nav";
 @import "blocks/section";
 @import "blocks/btn";
