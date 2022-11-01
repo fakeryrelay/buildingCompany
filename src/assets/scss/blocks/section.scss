@@ -50,10 +50,9 @@
 	max-width: 620px;
 	font-size: 4.8rem;
 	font-weight: 700;
-	white-space: nowrap;
 
-	@include breakpoint($tablet-sm) {
-		white-space: inherit;
+	&--nowrap {
+		white-space: nowrap;
 	}
 
 	@include breakpoint($mobile) {
@@ -76,5 +75,11 @@
 		margin-right: 3rem;
 		display: flex;
 		gap: 1.5rem;
+	}
+
+	@include breakpoint($mobile-sm) {
+		&--plan {
+			gap: 1rem;
+		}
 	}
 }
