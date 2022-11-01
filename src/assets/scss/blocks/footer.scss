@@ -7,11 +7,23 @@
 	padding: 8rem 0;
 	display: flex;
 	justify-content: space-between;
+	gap: 2rem;
+
+	@include breakpoint($tablet) {
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
 }
 
 .footer__item {
 	display: flex;
 	flex-direction: column;
+
+	@include breakpoint($tablet) {
+		&--contact {
+			text-align: center;
+		}
+	}
 }
 
 .footer__title {
@@ -142,6 +154,13 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	gap: 2rem;
+
+	@include breakpoint($mobile) {
+		height: auto;
+		flex-wrap: wrap;
+		padding: 3rem 0;
+	}
 }
 
 .footer__logo {
@@ -152,6 +171,11 @@
 .footer__copyright-text {
 	font-size: 1.2rem;
 	color: rgba(#fff, 70%);
+
+	@include breakpoint($mobile) {
+		order: 3;
+		text-align: center;
+	}
 }
 
 .footer__politic {
