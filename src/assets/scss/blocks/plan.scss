@@ -115,3 +115,11 @@ sup {
 	vertical-align: super;
 	font-size: 1rem;
 }
+
+.plan__btn {
+	display: none;
+
+	@include breakpoint($mobile) {
+		display: block;
+	}
+}
