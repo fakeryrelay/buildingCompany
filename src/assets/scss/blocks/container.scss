@@ -3,4 +3,10 @@
 	max-width: 1330px;
 	padding: 0 15px;
 	margin: 0 auto;
+
+	&--calc {
+		@include breakpoint($notebook) {
+			padding: 0;
+		}
+	}
 }
