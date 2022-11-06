@@ -9,7 +9,11 @@
 	}
 
 	@include breakpoint($desktop) {
-		padding: 9rem 3rem;
+		padding: 7rem 3rem;
+	}
+
+	@include breakpoint($mobile) {
+		padding: 7rem 1.5rem;
 	}
 }
 
@@ -68,11 +72,19 @@
 			margin-bottom: 0;
 		}
 	}
+
+	@include breakpoint($mobile) {
+		font-size: 2.2rem;
+	}
 }
 
 .calc__slider-num {
 	font-size: 4.8rem;
 	font-weight: 700;
+
+	@include breakpoint($mobile) {
+		font-size: 3.6rem;
+	}
 }
 
 .calc__line-item {

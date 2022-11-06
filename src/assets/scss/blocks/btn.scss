@@ -6,6 +6,7 @@
 	border-radius: 10px;
 	border: 2px solid $primary;
 
+	font-family: $font;
 	color: $white;
 	font-size: 1.8rem;
 	font-weight: 700;
@@ -45,6 +46,11 @@
 			color: $white;
 			background-color: $primary;
 		}
+	}
+
+	@include breakpoint($mobile) {
+		font-size: 1.6rem;
+		padding: 1rem 1.8rem;
 	}
 }
 

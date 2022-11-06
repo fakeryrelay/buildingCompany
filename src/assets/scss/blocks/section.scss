@@ -24,6 +24,14 @@
 			padding: 8rem 0;
 		}
 	}
+
+	@include breakpoint($mobile) {
+		padding: 8rem 0;
+
+		&--sm {
+			padding: 6rem 0;
+		}
+	}
 }
 
 .section__header {
@@ -58,11 +66,19 @@
 	@include breakpoint($mobile) {
 		font-size: 3.6rem;
 	}
+
+	@include breakpoint($mobile) {
+		font-size: 3rem;
+	}
 }
 
 .section__text {
 	max-width: 700px;
 	font-size: 1.8rem;
+
+	@include breakpoint($mobile) {
+		font-size: 1.6rem;
+	}
 }
 
 .section__end {
@@ -77,7 +93,13 @@
 		gap: 1.5rem;
 	}
 
-	@include breakpoint($mobile-sm) {
+	@include breakpoint($tablet-sm) {
+		&--news {
+			margin-right: 0;
+		}
+	}
+
+	@include breakpoint($mobile) {
 		&--plan {
 			gap: 1rem;
 		}

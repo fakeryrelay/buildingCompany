@@ -257,10 +257,6 @@
 			text-decoration: underline;
 		}
 
-		@include breakpoint($tablet) {
-			
-		}
-
 		@include breakpoint($mobile) {
 			-webkit-line-clamp: 2;
 		}

@@ -5,6 +5,10 @@
 	gap: 2.4rem;
 
 	overflow-x: scroll;
+
+	@include breakpoint($mobile) {
+		margin-top: 5rem;
+	}
 }
 
 .news__item {

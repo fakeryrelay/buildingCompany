@@ -9,6 +9,10 @@
 		flex-direction: column;
 		text-align: center;
 	}
+
+	@include breakpoint($mobile) {
+		gap: 0;
+	}
 }
 
 .partners__text {
@@ -22,6 +26,15 @@
 	&:last-of-type {
 		margin-bottom: 0;
 	}
+
+	@include breakpoint($mobile) {
+		margin-bottom: 2rem;
+
+		&:last-of-type {
+			margin-bottom: 0;
+		}
+	}
+	
 }
 
 .partners__items {
